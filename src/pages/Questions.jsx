@@ -31,7 +31,7 @@ const Questions = ({
   };
 
   return (
-    <div className="h-full relative p-10 font-alfa-slab-one text-3xl flex-col flex gap-4 items-center  border border-red-50">
+    <div className="h-full relative p-8 font-alfa-slab-one text-3xl flex-col flex gap-10 items-center ">
       <div className="flex text-white text-xl justify-center text-center sm:text-3xl">
         {`Questions ${index + 1} : ${questions[index].question}`}
       </div>

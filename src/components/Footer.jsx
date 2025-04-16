@@ -2,10 +2,10 @@ import React from 'react';
 
 const Footer = ({ handleReset }) => {
   return (
-    <div className="bg-header-footer w-full flex justify-between items-center p text-english font-aclonica px-8 py-2 border border-red-50 sm:px-14 sm:py-4">
+    <div className="bg-header-footer w-full flex justify-between items-center  text-english font-aclonica px-4 py-6 border border-red-50 sm:px-14 sm:py-4">
       <div className="flex gap-6 items-center justify-center ">
         <svg
-          className="bg-copper rounded-full fill-pastelPink cursor-pointer hover:scale-110 transition-transform duration-200 hover:fill-white h-10 w-10 sm:w-20 sm:h-20 "
+          className="bg-copper rounded-full fill-pastelPink cursor-pointer hover:scale-110 transition-transform duration-200 hover:fill-white h-13 w-13 sm:w-20 sm:h-20 "
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 32 32"
         >
@@ -17,7 +17,7 @@ const Footer = ({ handleReset }) => {
         </svg>
         <svg
           onClick={handleReset}
-          className="bg-copper rounded-full fill-pastelPink cursor-pointer hover:scale-110 transition-transform duration-200 hover:fill-white h-10 w-10  sm:w-20 sm:h-20"
+          className="bg-copper rounded-full fill-pastelPink cursor-pointer hover:scale-110 transition-transform duration-200 hover:fill-white h-13 w-13  sm:w-20 sm:h-20"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -28,7 +28,7 @@ const Footer = ({ handleReset }) => {
           </g>
         </svg>
       </div>
-      <div className="text-xl font-alfa-slab-one sm:text-4xl">
+      <div className="text-2xl font-alfa-slab-one sm:text-4xl ">
         created by: vian
       </div>
     </div>

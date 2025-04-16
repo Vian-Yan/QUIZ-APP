@@ -26,7 +26,7 @@ const Riview = ({ handleNext, handlePrev, answer, index, setDisplay }) => {
           {questions[index].options[questions[index].answer]}
         </div>
       </div>
-      <div className="absolute bottom-14 sm:bottom-29 right-0 flex justify-end  w-full gap-4 p-4 items-center text-sm sm:text-3xl ">
+      <div className="absolute bottom-30 sm:bottom-29 right-0 flex justify-end  w-full gap-4 p-4 items-center text-sm sm:text-3xl ">
         {index !== 0 && (
           <div
             onClick={handlePrev}
