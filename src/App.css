@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Alfa+Slab+One&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-header-footer: #435b66;
+  --color-charcoal: #2d4356;
+  --color-english: #a78296;
+  --color-white: #fff;
+  --color-copper: #a76f6f;
+  --color-pastelPink: #eab2a0;
+
+  --font-aclonica: Aclonica, sans-serif;
+  --font-alfa-slab-one: Alfa Slab One, sans-serif;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
