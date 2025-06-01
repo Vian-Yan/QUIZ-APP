@@ -12,9 +12,8 @@ const Start = ({ setDisplay }) => {
         START
       </button>
       <div className="wrap-break-word text-center">
-        KAMU ADALAH BENTUK KEGAGALAN DUNIA
-        <br />
-        KAMU TERLUKA,KAMU SELALU GAGAL DALAM HAL APAPUN
+        <p className="text-slate-200">Am i where i am supposed to be</p>
+        <p className="text-2xl sm:text-3xl">Selamat datang di Quiz App! 🎉</p>
       </div>
     </div>
   );
