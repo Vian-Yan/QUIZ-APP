@@ -4,9 +4,9 @@ const Footer = ({ handleReset }) => {
   return (
     <div className="bg-header-footer w-full flex justify-between items-center  text-english font-aclonica px-4 py-6 border border-red-50 sm:px-14 sm:py-4">
       <div className="flex gap-6 items-center justify-center ">
-        <div className="relative group inline-block  ">
+        <div className="relative group focus:outline-none inline-block ">
           <svg
-            className="bg-copper rounded-full fill-pastelPink cursor-pointer hover:scale-110 transition-transform duration-200 hover:fill-white h-13 w-13 sm:w-20 sm:h-20 "
+            className="absolute bottom-20 left-1/2 transform -translate-x-1/2 bg-copper text-white text-sm rounded-lg opacity-0 invisible group-focus:visible group-focus:opacity-100 transition-all duration-300 w-60 sm:w-80 "
             xmlns="http://www.w3.org/2000/svg "
             viewBox="0 0 32 32"
           >
