@@ -22,7 +22,7 @@ const Header = ({ display }) => {
           <span className="text-sm sm:text-xl">Hover Me</span>
         </div>
         <ul
-          className={`absolute -bottom-22 right-0 z-55  border invisible opacity-0  group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-copper text-white text-sm rounded-lg  w-60 h-20  flex py-2 items-center justify-center ${
+          className={`absolute -bottom-22 right-0 z-55  border transition-all duration-300 bg-copper text-white text-sm rounded-lg  w-60 h-20  flex py-2 items-center justify-center ${
             showTooltip ? 'visible opacity-100' : 'invisible opacity-0'
           }`}
         >
