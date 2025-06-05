@@ -6,11 +6,14 @@ const Header = ({ display }) => {
     <div className="bg-header-footer w-full flex justify-between  items-center  p-2 text-english font-aclonica px-4">
       <div className="text-5xl">{display !== 'start' ? 'quiz app' : ''}</div>
 
-      <nav
-        className="gap-4 text-2xl relative  group  inline-block "
-        onClick={() => setShowTooltip((prev) => !prev)}
-      >
-        <div className="flex flex-col items-center justify-center relative group-hover:scale-110 transition-transform duration-200 cursor-pointer">
+      <nav className="relative" onClick={() => setShowTooltip((prev) => !prev)}>
+        <div
+          className={`flex flex-col items-center justify-center  cursor-pointer  ${
+            showTooltip
+              ? 'scale-110 transform transition-transform duration-200'
+              : ''
+          } `}
+        >
           <img
             src="/assets/smiling-young-man-glasses.png"
             alt=""
@@ -18,7 +21,9 @@ const Header = ({ display }) => {
             height={60}
             className="sm:w-30 sm:h-30"
           />
-          <span className="text-sm sm:text-xl">Hover Me</span>
+          <span
+            className={`${showTooltip ? 'text-pastelPink' : 'text-english'}`}
+          >{`${showTooltip ? 'Thanks Udah Klik' : 'Klik Aku Bang'}`}</span>
         </div>
         <ul
           className={`absolute -bottom-22 right-0 z-55  border transition-all duration-300 bg-copper text-white text-sm rounded-lg  w-60 h-20  flex py-2 items-center justify-center ${
@@ -30,6 +35,7 @@ const Header = ({ display }) => {
             <a
               href="https://www.instagram.com/viannv___/"
               rel="noopener noreferrer"
+              className="hover:scale-110 transition-transform duration-200"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +61,11 @@ const Header = ({ display }) => {
 
           <li className="flex flex-col gap-1 items-center">
             <span>telegram</span>
-            <a href="https://t.me/Aowkaowkaks" rel="noopener noreferrer">
+            <a
+              href="https://t.me/Aowkaowkaks"
+              rel="noopener noreferrer"
+              className="hover:scale-110 transition-transform duration-200"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
