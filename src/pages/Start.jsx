@@ -1,4 +1,5 @@
 import React from 'react';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Start = ({ setDisplay }) => {
   return (
@@ -13,6 +14,20 @@ const Start = ({ setDisplay }) => {
       </button>
       <div className="wrap-break-word text-center">
         <p className="text-slate-200">Am i where i am supposed to be</p>
+        <h1>
+          I am a{' '}
+          <span className="text-xl font-alfa-slab-one text-english">
+            <Typewriter
+              words={['Vian,Sedang Belajar React']}
+              loop={true}
+              cursor
+              cursorStyle="|"
+              typeSpeed={60}
+              deleteSpeed={60}
+              delaySpeed={3000}
+            />
+          </span>
+        </h1>
         <p className="text-2xl sm:text-3xl">Selamat datang di Quiz App! 🎉</p>
       </div>
     </div>
